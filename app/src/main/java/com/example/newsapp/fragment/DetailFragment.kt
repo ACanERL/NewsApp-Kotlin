@@ -1,0 +1,36 @@
+package com.example.newsapp.fragment
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import coil.load
+import com.example.newsapp.databinding.FragmentDetailBinding
+import com.example.newsapp.databinding.FragmentDiscoverBinding
+
+
+class DetailFragment : Fragment() {
+    private var _binding: FragmentDetailBinding?=null
+    private val binding get() = _binding!!
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        _binding= FragmentDetailBinding.inflate(inflater,container,false)
+
+        binding.detailTitle.text = arguments?.getString("title")
+        binding.detailDescp.text = arguments?.getString("descp")
+        binding.dateTime.text=arguments?.getString("time")
+        binding.detailImage.load(arguments?.getString("image")){
+            crossfade(true)
+            crossfade(1000)
+        }
+
+        return binding.root
+    }
+
+
+}

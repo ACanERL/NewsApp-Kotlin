@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <item android:id="@+id/discoverFragment"
+          android:icon="@drawable/home"
+          android:title="Discover"></item>
+    <item android:id="@+id/categoryFragment"
+        android:icon="@drawable/search"
+        android:title="Category"></item>
+    <item android:id="@+id/savedFragment"
+        android:icon="@drawable/favorite"
+        android:title="Saved"></item>
+</menu>
