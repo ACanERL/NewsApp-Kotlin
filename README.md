@@ -14,5 +14,6 @@ https://user-images.githubusercontent.com/71428865/235308145-d4b43d55-00d0-47ad-
 <li>View Binding</li>
 <li>Recycler View</li>
 <li>Hilt-Dagger</li>
+<li>Coil</li>
 <li>NewsApi-https://newsapi.org/</li>
 
